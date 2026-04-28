@@ -53,15 +53,15 @@ section h1 {
 
 /* Accueil */
 #acceuil {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCpFRdlrBIcA9F3p0cpZuIOleWKyJ4tLyD6g&s);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkKrbMOul4ubpP0QfeFz5Ps8gEUBkWatcIxA&s);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
+    height: 600px;
 }
-
 
 #acceuil p {
     max-width: 700px;
