@@ -139,50 +139,45 @@ img {
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    height: auto;
     padding: 20px;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    background-color: #D6E6F2;
+
 }
 
-#culture h1 {
+.container h1 {
     text-align: center;
-    color: #5DADE2;
+    color: #2F6FA8;
     margin: 30px;
 }
 
 #culture {
-    background-color: #1E3A5F;
     margin-top: 0;
     padding-top: 20px;
     position: relative;
+
 }
 
 [class^="card"] {
     position: relative;
+    height: 70px;
     width: 50%;
     margin-bottom: 40px;
     padding: 15px;
     background: #EAF4FB;
     border-radius: 10px;
     border-left: solid green 8px;
-}
-
-.card2 {
-    margin-left: 11%;
-}
-
-.card3 {
-    margin-left: 22%;
+    overflow: hidden;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-left: 40px;
 
 }
 
-.card4 {
-    margin-left: 33%;
-}
-
-.card5 {
-    margin-left: 44%;
+[class^="card"]:hover {
+    height: 340px;
 }
 
 #culture h3 {
@@ -195,8 +190,8 @@ img {
 #culture p {
     background-color: rgb(232, 140, 140);
     border-radius: 10px;
-    height: 10%;
-    width: 23%;
+    height: 15%;
+    width: 10%;
     padding: 5px;
     margin-left: 5px;
 
