@@ -205,6 +205,33 @@
                 <p>À partir de 1300 DH</p>
         </div>
         </div>
+        <section id="réservation">
+        <h1>Pret pour l'aventure marocaine?</h1>
+        <p>Contactez nos experts locaux pour concevoir votre voyage sur mesure,parfaitement adapté à vos envies et à votre budget.</p>
+        <div class="resume">
+        <h1>Réservation</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Prénom&Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="destination">Destination :</label>
+            <select id="destination" name="destination" required>
+                <option value="">Sélectionnez une destination</option>
+                <option value="marrakech">Marrakech</option>
+                <option value="fes">Fès</option>
+                <option value="rabat">Rabat</option>
+                <option value="dakhla">Dakhla</option>
+                <option value="tanger">Tanger</option>
+            </select>
+           <label>Message</label>
+          <textarea placeholder="Dites-nous en plus sur vos dates, le nombre de personnes..."></textarea>
+            <button type="submit">Envoyer ma demande</button>
+        </form>
+        </div>
+    </section>
 </body>
 
 </html>
