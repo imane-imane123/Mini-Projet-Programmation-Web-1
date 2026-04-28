@@ -1,0 +1,161 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #8B0000;
+    color: white;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Sections générales */
+section {
+    padding: 50px 20px;
+}
+
+section h1 {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8B0000;
+}
+
+/* Accueil */
+#acceuil {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0VM4RnAQYsm-sj3QI-4mYGAs0TTQ9C8zMHA&s") center/cover;
+    height: 600px;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#acceuil p {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 70px;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+}
+
+/* Destinations */
+.contenue {
+    gap: 20px;
+    display: flex;
+}
+
+
+.ville {
+    transition: transform 0.1s ease;
+}
+
+.ville:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 215px;
+    max-width: 225px;
+    height: 350px;
+}
+
+.ville img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Culture */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.container p {
+    text-indent: 10px;
+}
+
+.card {
+    background-color: #fff;
+    border-left: 5px solid #8B0000;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #8B0000;
+}
+
+.card ul {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* Offres */
+.info {
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+.text2 {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #FFD700;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text2 h2 {
+    color: #8B0000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
