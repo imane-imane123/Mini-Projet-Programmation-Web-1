@@ -48,11 +48,12 @@ section h1 {
     text-align: center;
     margin-bottom: 40px;
     color: #8B0000;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Accueil */
 #acceuil {
-    background: url("https://www.americantravel.fr/cdn/shop/articles/illus-maroc-mosquee.jpg?v=1652107318") center/cover;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbVhmu7a1i4X5s-xdYMJRec-Ntfmo6-GvutA&s") center/cover;
     height: 600px;
     color: white;
     text-align: center;
@@ -83,6 +84,7 @@ section h1 {
     transform: scale(1.1);
 }
 
+
 .text {
     background: #f9f9f9;
     border-radius: 10px;
@@ -90,7 +92,11 @@ section h1 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     min-width: 215px;
     max-width: 225px;
-    height: 350px;
+    height: 360px;
+}
+
+.text:hover {
+    background-color: #FFF8E7;
 }
 
 .ville img {
@@ -106,6 +112,11 @@ section h1 {
     gap: 20px;
 }
 
+#culture h3 {
+    font-style: italic;
+    color: #333333;
+}
+
 .card ul,
 .card h4 {
     display: none;
@@ -116,19 +127,21 @@ section h1 {
     cursor: pointer;
 }
 
-/* ملي تدوز الماوس */
 .card:hover {
-    background-color: #fff3e0;
     transform: scale(1.02);
+    background-color: #FFF8E7;
 }
 
 .card:hover ul,
 .card:hover h4 {
     display: block;
+
 }
+
 
 .container p {
     text-indent: 10px;
+
 }
 
 .card {
@@ -137,6 +150,9 @@ section h1 {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    margin-left: 250px;
+
 }
 
 .card h3 {
@@ -172,14 +188,30 @@ section h1 {
 }
 
 .text2 {
-    background: #f9f9f9;
+    background-color: #FFF8E7;
     padding: 15px;
     border-radius: 50px;
     border: #8B0000 solid 5px;
+    animation-name: changecolor;
+    animation-duration: 3s;
+}
 
+@keyframes changecolor {
+    0% {
+        background-color: #FFF8E7;
+    }
+
+    50% {
+        background-color: #8B0000;
+    }
+
+    100% {
+        background-color: #FFF8E7;
+    }
 }
 
 .text2 h2 {
     text-indent: 10px;
     text-decoration: underline;
+    color: #333333;
 }
